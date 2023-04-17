@@ -1,5 +1,12 @@
 import React from 'react'
-import Link from './Link'
+// import NavLink from './NavLink'
+import { Link } from 'react-router-dom'
+
+const paths = [
+  { to: '/', item: 'Home' },
+  { to: '/contact', item: 'Contact' },
+  { to: '/about', item: 'About' },
+]
 
 export default function Nav() {
   return (
@@ -7,7 +14,11 @@ export default function Nav() {
       <section className='nav__container'>
         <h1 className='nav__title'>Chencho</h1>
         <ul className='nav__links'>
-          <Link />
+          {paths.map(({ item, to }) => (
+            <li className='nav__link' key={item}>
+              <Link to={to}>{item}</Link>
+            </li>
+          ))}
         </ul>
       </section>
     </nav>
