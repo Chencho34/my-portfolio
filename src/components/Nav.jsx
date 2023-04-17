@@ -1,12 +1,6 @@
 import React from 'react'
-// import NavLink from './NavLink'
 import { Link } from 'react-router-dom'
-
-const paths = [
-  { to: '/', item: 'Home' },
-  { to: '/contact', item: 'Contact' },
-  { to: '/about', item: 'About' },
-]
+import { paths } from './constans'
 
 export default function Nav() {
   return (

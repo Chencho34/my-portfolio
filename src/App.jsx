@@ -1,8 +1,11 @@
 import './App.css'
-import Home from './components/Home'
 import Nav from './components/Nav'
-import Contact from './components/Contact'
-import About from './components/About'
+
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import About from './pages/About'
+import Projects from './pages/Projects'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -15,15 +18,8 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
       </Routes>
     </Router>
-    // <body>
-    //   <header>
-    //     <Nav />
-    //   </header>
-    //   <main>
-    //     <Home />
-    //   </main>
-    // </body>
   )
 }
