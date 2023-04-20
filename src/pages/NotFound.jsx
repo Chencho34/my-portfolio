@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NotFound() {
   return (
-    <section>
+    <section className='container'>
       <h1>No found</h1>
     </section>
   )

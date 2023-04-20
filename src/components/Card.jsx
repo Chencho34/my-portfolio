@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 export default function Card({ title, paragraph }) {
   return (
@@ -11,7 +12,7 @@ export default function Card({ title, paragraph }) {
           <p className='card__paragraph'>{paragraph}</p>
         </article>
         <article className='card__fotter'>
-          <a href='#'>link</a>
+          <Button title='link' />
         </article>
       </section>
     </section>

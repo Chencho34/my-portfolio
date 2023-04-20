@@ -19,7 +19,7 @@ export default function Home() {
             temporibus aliquam non explicabo alias corrupti autem, cupiditate
             nesciunt. Reiciendis ex nostrum labore a laborum.
           </p>
-          <Button />
+          <Button title='CV' />
         </article>
         <article className='home__image'>
           <img className='home__img' src={logo} alt='img' />
