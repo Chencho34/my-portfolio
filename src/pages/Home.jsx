@@ -4,7 +4,7 @@ import Button from '../components/Button'
 
 export default function Home() {
   return (
-    <section className='home'>
+    <section className='home container'>
       <article className='home__container'>
         <article className='home__texts'>
           <h1 className='home__title'>

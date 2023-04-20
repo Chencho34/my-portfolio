@@ -8,7 +8,10 @@
   height: 70px;
   width: 100vw;
   background-color: #1f1b1b;
-  /* box-shadow: 0px 2px 20px aqua; */
+
+  box-shadow: 0px 2px 20px black;
+  position: fixed;
+  z-index: 100;
 }
 
 .nav__container {
@@ -24,9 +27,24 @@
 }
 
 .nav__title {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  /* font-weight: 900; */
   color: #535bf2;
   text-shadow: 0 0 23px #535bf2;
+
+  animation: shadow-animation 3.5s infinite;
+}
+
+@keyframes shadow-animation {
+  0% {
+    text-shadow: 0 0 0px #535bf2;
+  }
+  50% {
+    text-shadow: 0 0 25px #535bf2;
+  }
+  100% {
+    text-shadow: 0 0 0px #535bf2;
+  }
 }
 
 .nav__links {
@@ -59,14 +77,28 @@
 /* rgba(0, 0, 0, 0.55) 0px 20px 68px */
 
 .home {
-  background-color: rgb(19, 16, 16);
+  /* position: absolute; */
+  /* top: 70px; */
+  /* background-color: rgb(19, 16, 16); */
+  /* height: calc(100vh - 70px); */
+
+  /* background-color: black; */
   /* background-color: white; */
   /* background: white; */
-  height: calc(100vh - 70px);
   /* background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
+}
+
+.container {
+  position: absolute;
+  top: 70px;
+
+  background-color: rgb(19, 16, 16);
+  height: calc(100vh - 70px);
+  /* width: 100vw; */
+  /* margin: 0 auto; */
 }
 
 .home__container {
@@ -109,6 +141,12 @@
 }
 .home__image {
   width: 30%;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* margin: 0 auto; */
   /* height: 50%; */
   /* background-color: #fff; */
   /* overflow: hidden; */
@@ -140,4 +178,55 @@
 
 .btn__cta:hover {
   box-shadow: 0 0 30px #535bf2;
+}
+
+.cards {
+  /* height: calc(100vh - 70px); */
+  /* width: 90vw; */
+  /* margin: 0 auto; */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+
+  /* background-color: red; */
+}
+
+.cards__container {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  background-color: red;
+}
+
+.card {
+  /* background-color: rgb(31, 28, 28); */
+  width: 340px;
+  height: 380px;
+
+  border-radius: 30px;
+  padding: 33px;
+}
+
+.card__container {
+  /* background-color: #fff; */
+}
+
+.card__title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+
+  color: #535bf2;
+  /* font-weight: 700; */
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.card__paragraph {
+  font-size: 1rem;
+  font-weight: 500;
 }
