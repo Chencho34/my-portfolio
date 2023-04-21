@@ -29,7 +29,7 @@
 .nav__title {
   font-size: 1.9rem;
   /* font-weight: 900; */
-  color: #535bf2;
+  /* color: #535bf2; */
   text-shadow: 0 0 23px #535bf2;
 
   animation: shadow-animation 3.5s infinite;
@@ -171,6 +171,7 @@
 
 .home__img:hover {
   box-shadow: 0 0 30px #535bf2;
+  /* box-shadow: 0 0 30px #d7d7e4; */
   cursor: pointer;
 }
 .btn__cta {
