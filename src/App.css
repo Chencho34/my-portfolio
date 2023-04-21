@@ -54,11 +54,10 @@
 }
 
 .nav__links a {
-  /* color: aqua; */
   color: white;
   /* color: #646cf}f; */
   font-weight: 500;
-  text-decoration: inherit;
+  text-decoration: none;
   font-size: 1em;
   text-transform: capitalize;
   transition: color ease-in 0.2s;
@@ -66,7 +65,17 @@
 
 .nav__links a:hover {
   color: #535bf2;
+  /* border-bottom: 2.3px solid #535bf2; */
+}
+
+.nav__link--active a {
+  /* color: red; */
+  /* background-color: red; */
+
+  color: #535bf2;
+  /* font-weight: bold; */
   border-bottom: 2.3px solid #535bf2;
+  /* background-color: red; */
 }
 
 .nav__title,
@@ -236,4 +245,26 @@
 .card__paragraph {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.not-found__contain {
+  height: calc(100vh - 70px);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* background-color: gray; */
+}
+
+.not-found__error {
+  font-size: 10rem;
+  letter-spacing: 10px;
+}
+
+.not-found__text {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 6px;
 }
