@@ -8,7 +8,7 @@ export default function Home() {
       <article className='home__container'>
         <article className='home__texts'>
           <h1 className='home__title'>
-            Hello i'm <span>Chencho</span>
+            Hello i'm <span>Mayra Rico Lopez</span>
           </h1>
           <h2 className='home__work'>Web developer</h2>
           <p className='home__paragraph'>
