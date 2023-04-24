@@ -7,8 +7,8 @@ export default function Projects() {
     <section className='container container-projects'>
       <h1 className='projects__title'>my-projects</h1>
       <section className='cards__container'>
-        {projects.map(({ id, title, paragraph }) => (
-          <Card key={id} title={title} paragraph={paragraph} />
+        {projects.map(({ id, title, paragraph, link }) => (
+          <Card key={id} title={title} paragraph={paragraph} link={link} />
         ))}
       </section>
     </section>

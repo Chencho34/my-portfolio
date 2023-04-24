@@ -83,55 +83,29 @@
   letter-spacing: 1.5px;
 }
 
-/* rgba(0, 0, 0, 0.55) 0px 20px 68px */
-
-.home {
-  /* position: absolute; */
-  /* top: 70px; */
-  /* background-color: rgb(19, 16, 16); */
-  /* height: calc(100vh - 70px); */
-
-  /* background-color: black; */
-  /* background-color: white; */
-  /* background: white; */
-  /* background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-}
-
 .container {
   position: absolute;
   top: 70px;
-
   background-color: rgb(19, 16, 16);
-  /* background: rgb(19, 16, 16); */
-  /* background-attachment: fixed; */
-  /* background-attachment: fixed; */
+  /* background-color: rgb(15, 8, 8); */
   height: calc(100vh - 70px);
-  /* width: 100vw; */
-  /* margin: 0 auto; */
-  overflow: scroll;
+  width: 100vw;
+  /* overflow: scroll; */
   overflow-x: hidden;
 }
 
 .home__container {
-  /* background-color: #535bf2; */
   height: 100%;
   width: 90%;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   gap: 50px;
 }
 
 .home__texts {
   width: 50%;
-  /* background-color: gray; */
-
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -151,19 +125,13 @@
   letter-spacing: 1.2px;
   font-weight: 400;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  /* font-size: 1rem; */
 }
+
 .home__image {
   width: 30%;
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-
-  /* margin: 0 auto; */
-  /* height: 50%; */
-  /* background-color: #fff; */
-  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__img {
@@ -176,35 +144,29 @@
 
 .home__img:hover {
   box-shadow: 0 0 30px #535bf2;
-  /* box-shadow: 0 0 30px #d7d7e4; */
   cursor: pointer;
 }
+
+.btn {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
 .btn__cta {
   background-color: #535bf2;
   width: 100px;
-  display: inline-block;
+  display: block;
   padding: 9px;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 14px;
   cursor: pointer;
   transition: box-shadow ease-in 0.3s;
 }
 
 .btn__cta:hover {
   box-shadow: 0 0 30px #535bf2;
-}
-
-.cards {
-  /* height: calc(100vh - 70px); */
-  /* width: 90vw; */
-  /* margin: 0 auto; */
-
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-
-  /* background-color: red; */
 }
 
 .cards__container {
@@ -267,18 +229,21 @@
 }
 
 .not-found__contain {
-  height: calc(100vh - 70px);
   width: 80%;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  background: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  gap: 20px;
   /* background-color: gray; */
 }
 
 .not-found__error {
-  font-size: 10rem;
+  font-size: 7rem;
+  /* background-color: red; */
   letter-spacing: 10px;
 }
 
@@ -290,6 +255,9 @@
 
 .projects__title {
   width: 87%;
+  /* background-color: red; */
+  position: sticky;
+  top: 0px;
   margin: 0 auto;
   margin-top: 33px;
   font-size: 50px;

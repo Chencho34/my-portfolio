@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-export default function Card({ title, paragraph }) {
+export default function Card({ title, paragraph, link }) {
   return (
     <section className='card'>
       <section className='card__container'>
@@ -14,7 +14,7 @@ export default function Card({ title, paragraph }) {
           </article>
         </div>
         <article className='card__fotter'>
-          <Button title='link' />
+          <Button title='see' link={link} />
         </article>
       </section>
     </section>

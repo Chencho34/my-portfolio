@@ -10,13 +10,15 @@ export const projects = [
     id: 1,
     title: 'tesla-clone',
     paragraph:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam sapiente labore vel saepe earum provident nulla eum molestias ut.'
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam sapiente labore vel saepe earum provident nulla eum molestias ut.',
+    link: 'https://github.com/Chencho34/tesla-clon'
   },
   {
     id: 2,
     title: 'disney-plus-clone',
     paragraph:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam sapiente labore vel saepe earum provident nulla eum molestias ut.'
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam sapiente labore vel saepe earum provident nulla eum molestias ut.',
+    link: 'https://github.com/Chencho34/disney-plus-clone-app'
   },
   {
     id: 3,
